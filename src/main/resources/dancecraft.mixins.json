@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "dev.dancecraft.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "HumanoidModelMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

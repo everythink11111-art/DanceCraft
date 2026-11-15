@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "dancecraft",
+  "version": "${version}",
+  "name": "DanceCraft",
+  "description": "Client-side cosmetic dance animations for Minecraft players.",
+  "authors": ["DanceCraft"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.dancecraft.DanceCraftClient"]
+  },
+  "mixins": [
+    "dancecraft.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
