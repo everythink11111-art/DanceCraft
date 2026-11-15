@@ -53,12 +53,13 @@ public abstract class HumanoidModelMixin {
 
         float armLift;
         if (cycle < 1.0f) {
-            armLift = -0.10f - 1.15f * smooth(cycle);
+            armLift = -0.10f - 2.75f * smooth(cycle);
         } else if (cycle < 5.8f) {
-            armLift = -1.15f - 0.24f * wave;
+            // Keep both arms raised above the head throughout the main dance.
+            armLift = -2.75f - 0.10f * wave;
         } else {
             float p = smooth((cycle - 5.8f) / 2.2f);
-            armLift = -1.15f * (1.0f - p) - 0.10f * p;
+            armLift = -2.75f * (1.0f - p) - 0.10f * p;
         }
 
         rightArm.xRot = armLift + 0.16f * wave;
